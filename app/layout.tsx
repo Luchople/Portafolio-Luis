@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GuaranteedParticles from '@/components/GuaranteedParticles';
 
-
 const urbanist = Urbanist({
   variable: "--font-urbanist",
   subsets: ["latin"],
@@ -29,7 +28,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         
         {/* Main con z-index medio - contenido sobre partículas */}
-        <main className="pt-20 flex-1 relative z-10">{children}</main>
+        {/* Ajustado el padding para mobile: pt-16 sm:pt-20 */}
+        <main className="pt-16 sm:pt-20 flex-1 relative z-10 min-h-0">
+          {children}
+        </main>
         
         {/* Footer con z-index alto - siempre visible */}
         <div className="relative z-50">
