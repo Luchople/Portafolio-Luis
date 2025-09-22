@@ -44,14 +44,14 @@ export default function Home() {
   };
 
   // Función para descargar CV
-  const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/cv/CV - Luis Vera - Ing Informática.docx';
-    link.download = 'CV - Luis Vera - Ing Informática.docx';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+ const handleDownloadCV = () => {
+  const link = document.createElement('a');
+  link.href = '/cv/CV - Luis Vera - Ing Informática.pdf';
+  link.download = 'CV - Luis Vera - Ing Informática.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <div className="relative min-h-[calc(100vh-5rem)] sm:min-h-[calc(100vh-5rem)] flex items-center justify-center px-4 sm:px-6 py-4 sm:py-8">
