@@ -11,16 +11,16 @@ export default function About() {
 
   const textContent = [
     "cat about_me.txt",
-    "Egresado de Ingeniería en Informática. Actualmente estoy enfocado en el desarrollo de software full-stack y abierto a otras áreas TI.",
+    "Ingeniero en Informática orientado al desarrollo backend y full stack, con experiencia en construcción de API REST, automatización de procesos, integración de datos y desarrollo de aplicaciones web con .NET, SQL, NestJS, React y Python. He integrado modelos de IA locales para resolver problemas mediante procesamiento de lenguaje natural. Busco desarrollar soluciones escalables, mantenibles y centradas en la automatización.",
     "$ ls ./skills/",
     ""
   ];
 
   const skills = {
-    "Lenguajes": ["Python", "JavaScript", "Java", "C#"],
-    "Frameworks/Librerías": ["Django", "React", "Next.js", '.NET 8' ,"Tailwind", "Bootstrap"],
-    "Bases de datos": ["T-SQL", "MySQL", "Oracle SQL", "PL/SQL"],
-    "Cloud & Tools": ["GCP", "Git & GitHub", "Vercel", "Netlify", "Trello", "Jira"]
+    "Front End": ["JavaScript", "TypeScript", "React", "Next.js", "Vite", "Tailwind"],
+    "Backend": ["C# .NET", "NestJS", "Django", "REST API", "Postman"],
+    "Datos & Integración": ["Pentaho ETL", "T-SQL", "SQL Server", "Prisma ORM", "SQLite", "Python"],
+    "IA & Herramientas": ["Ollama", "LLMs locales (Qwen3)", "Git & GitHub", "Visual Studio", "VS Code"]
   };
 
   useEffect(() => {
@@ -152,22 +152,35 @@ export default function About() {
         </div>
 
         {/* Additional Info Cards */}
-        <div className={`grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8 transition-all duration-1000 ${
+        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 transition-all duration-1000 ${
           currentSection >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
           <div className="bg-black/60 backdrop-blur-md border border-purple-500/30 rounded-lg p-4 sm:p-6 hover:border-purple-500/50 transition-all duration-300">
             <h3 className="text-purple-400 font-bold mb-2 sm:mb-3 text-sm sm:text-base">🎓 Educación</h3>
             <p className="text-gray-300 text-xs sm:text-sm">Ingeniería en Informática</p>
-            <p className="text-gray-400 text-xs">Duoc UC - 2025</p>
+            <p className="text-gray-400 text-xs">Duoc UC, Maipú · 2021 – 2024</p>
+            <p className="text-gray-400 text-xs">Titulación: Dic. 2025</p>
           </div>
           
           <div className="bg-black/60 backdrop-blur-md border border-purple-500/30 rounded-lg p-4 sm:p-6 hover:border-purple-500/50 transition-all duration-300">
             <h3 className="text-purple-400 font-bold mb-2 sm:mb-3 text-sm sm:text-base">💼 Vantrust Capital</h3>
-            <p className="text-gray-300 text-xs sm:text-sm">Desarrollador y Analista de Datos</p>
-            <p className="text-gray-300 text-xs sm:text-sm mb-2">Práctica Laboral (Enero 2025 – Abril 2025)</p>
+            <p className="text-gray-300 text-xs sm:text-sm">Analista de Proyectos TI</p>
+            <p className="text-gray-300 text-xs sm:text-sm mb-2">Mayo 2025 – Marzo 2026</p>
             <div className="space-y-1">
-              <p className="text-gray-400 text-xs">• Portal Web Gestión Usuarios</p>
-              <p className="text-gray-400 text-xs">• API .NET para AAD y EntraID</p>
+              <p className="text-gray-400 text-xs">• Workers y API en C# (.NET) para automatización</p>
+              <p className="text-gray-400 text-xs">• ETL Pentaho con Stored Procedures</p>
+              <p className="text-gray-400 text-xs">• Salesforce y validación de APIs (Postman)</p>
+              <p className="text-gray-400 text-xs">• Levantamiento de requerimientos y proveedores</p>
+            </div>
+          </div>
+
+          <div className="bg-black/60 backdrop-blur-md border border-purple-500/30 rounded-lg p-4 sm:p-6 hover:border-purple-500/50 transition-all duration-300">
+            <h3 className="text-purple-400 font-bold mb-2 sm:mb-3 text-sm sm:text-base">💼 Vantrust Capital</h3>
+            <p className="text-gray-300 text-xs sm:text-sm">Práctica Desarrollo Web y Analista de Datos</p>
+            <p className="text-gray-300 text-xs sm:text-sm mb-2">Enero 2025 – Abril 2025</p>
+            <div className="space-y-1">
+              <p className="text-gray-400 text-xs">• Portal Web Gestión Usuarios (React + Tailwind)</p>
+              <p className="text-gray-400 text-xs">• API REST para CRUD con Stored Procedures</p>
               <p className="text-gray-400 text-xs">• ETL Pentaho con Stored Procedures</p>
             </div>
           </div>

@@ -13,6 +13,14 @@ export default function Proyectos() {
 
   const projects = [
     {
+      category: "FULL STACK / IA",
+      title: "Bank Tracker — Finanzas Personales con IA",
+      description: "Plataforma full stack para el análisis inteligente de finanzas personales. Automatiza la extracción de movimientos bancarios desde correos (ETL en Python vía IMAP con Regex y BeautifulSoup) y permite consultarlos en lenguaje natural mediante un LLM local (Qwen3 8B con Ollama). Backend REST en NestJS con Prisma y SQLite; frontend en React + TypeScript. Arquitectura desacoplada que permite reemplazar el modelo de IA sin tocar la lógica de negocio.",
+      tech: ["Python", "NestJS", "React", "TypeScript", "Prisma", "SQLite", "Ollama", "Qwen3"],
+      color: "from-emerald-500 to-teal-600",
+      status: "Proyecto personal · 2026"
+    },
+    {
       category: "NEXT.JS",
       title: "Portal Gestión de Usuarios",
       description: "Aplicación web para gestión de permisos de usuarios y gestión de Base de Datos.",
@@ -137,12 +145,12 @@ export default function Proyectos() {
                     </div>
 
                     {/* Project Title */}
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-green-400 mb-2 md:mb-3 line-clamp-2">
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-green-400 mb-2 md:mb-3">
                       {project.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-3 md:mb-4 line-clamp-4">
+                    <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-3 md:mb-4">
                       {project.description}
                     </p>
 

@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
 
   const fullText = "Hola mundo, soy Luis";
-  const subtitle = "Desarrollador Junior";
+  const subtitle = "Desarrollador Backend & Full Stack";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -80,8 +80,8 @@ export default function Home() {
           <p className={`text-sm sm:text-base md:text-lg text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-500 ${
             currentIndex >= fullText.length ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            Ingeniero Informático especializado en desarrollo con experiencia práctica en React, 
-            .NET y análisis de datos. He desarrollado soluciones reales para empresas como Vantrust Capital y Brokerbot, desde portales de gestión hasta APIs robustas y sistemas ETL
+            Ingeniero Informático · Backend & Full Stack
+Me dedico a construir cosas que resuelven problemas: APIs robustas, automatización de procesos e integración de IA. Ya sea para una empresa o un proyecto personal, me gusta llevar la idea desde la base de datos hasta la interfaz.
           </p>
 
           {/* Botones con animación escalonada */}
@@ -100,9 +100,9 @@ export default function Home() {
             >
               Sobre Mí
             </button>
-            <button 
+            <button
               onClick={handleDownloadCV}
-              className="border border-green-500/50 px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-green-500/10 transition-all duration-300 hover:scale-105 font-medium text-green-400 flex items-center justify-center gap-2 text-sm sm:text-base"
+              className="bg-gradient-to-r from-green-500 to-emerald-500 border border-green-400/60 px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg shadow-green-500/40 hover:shadow-xl hover:shadow-green-500/60 hover:from-green-400 hover:to-emerald-400 transition-all duration-300 hover:scale-105 font-semibold text-black flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

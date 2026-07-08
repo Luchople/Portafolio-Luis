@@ -9,7 +9,7 @@ export default function Contacto() {
   const [showCursor, setShowCursor] = useState(true);
 
   const fullText = "Conectemos";
-  const subtitle = "¿Tienes un proyecto en mente?";
+  const subtitle = "Estoy buscando nuevos desafíos";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -67,9 +67,8 @@ export default function Contacto() {
           <p className={`text-sm sm:text-base md:text-lg text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-500 ${
             currentIndex >= fullText.length ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            Estoy siempre abierto a nuevas oportunidades y colaboraciones. 
-            Ya sea que tengas una idea innovadora o necesites ayuda con un proyecto existente, 
-            me encantaría escuchar de ti.
+          Actualmente abierto a oportunidades como desarrollador backend / full stack. 
+          Si crees que puedo aportar a tu equipo o proyecto, escríbeme por correo o LinkedIn y te respondo pronto.
           </p>
 
           {/* Información de contacto */}
