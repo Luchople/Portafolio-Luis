@@ -46,8 +46,8 @@ export default function Home() {
   // Función para descargar CV
  const handleDownloadCV = () => {
   const link = document.createElement('a');
-  link.href = '/cv/CV - Luis Vera - Ing Informática.pdf';
-  link.download = 'CV - Luis Vera - Ing Informática.pdf';
+  link.href = '/cv/CV-Luis_Vera2026.pdf';
+  link.download = 'CV-Luis_Vera2026.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
